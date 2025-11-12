@@ -78,6 +78,11 @@ namespace Bots.FishingBuddy
 
 		[Setting, Styx.Helpers.DefaultValue(true), Description("If set to true bot will automatically fillet fish"), Category("Fishing")]
 		public bool FilletFish { get; set; }
+
+		// New setting: Stop when item caught
+		[Setting, Styx.Helpers.DefaultValue(0u), Description("Wowhead item ID to stop the bot when caught (0 to disable)."), Category("Fishing")]
+		public uint StopOnItemId { get; set; }
+
 		#endregion
 
 		#region Advanced

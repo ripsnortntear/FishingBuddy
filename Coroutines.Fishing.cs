@@ -59,6 +59,18 @@ namespace Bots.FishingBuddy
 			if (await CheckLootFrame())
 				return true;
 
+			// New: Check for stop-on-item after looting
+			if (FishingBuddySettings.Instance.StopOnItemId != 0)
+			{
+				var targetItem = Me.BagItems.FirstOrDefault(i => i.Entry == FishingBuddySettings.Instance.StopOnItemId);
+				if (targetItem != null)
+				{
+					FishingBuddyBot.Log("Stopping bot: Caught target item '{0}' (ID: {1}).", targetItem.Name, targetItem.Entry);
+					TreeRoot.Stop("Caught target item");  // Updated: Use TreeRoot.Stop to halt the bot globally
+					return true;
+				}
+			}
+
 			// refresh water walking if needed
 			if (!Me.Mounted && WaterWalking.CanCast 
 				&& !WaterWalking.IsActive
