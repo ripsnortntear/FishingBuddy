@@ -42,7 +42,7 @@ No other files were altered, ensuring minimal disruption to existing functionali
 1. **Prerequisites**:
    - Honorbuddy installed and configured for WoW Mists of Pandaria.
    - .NET Framework 4.5.1 or compatible.
-   - Access to the FishingBuddy plugin source.
+   - Access to the FishingBuddy bot source. (This Repo)
 
 2. **Install**:
    - Clone or download this repository.
