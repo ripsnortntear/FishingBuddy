@@ -49,11 +49,7 @@ No other files were altered, ensuring minimal disruption to existing functionali
    - Place the repo files in Honorbuddy's `Bots\FishingBuddy` directory.
    - Restart Honorbuddy and select FishingBuddy as the bot.
 
-3. **Install**:
-   - Place the repo files in Honorbuddy's `Bots\FishingBuddy` directory.
-   - Restart Honorbuddy and select FishingBuddy as the bot.
-
-4. **Configure**:
+3. **Configure**:
    - Use Honorbuddy's Bot Config button to set the ItemID you want to catch.
 
 ## Usage
